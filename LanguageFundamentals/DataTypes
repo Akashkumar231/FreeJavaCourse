@@ -1,0 +1,15 @@
+In Java there is a type for every variable and expressions.Each and every data types is clearly defined , Every assignment
+should check by the compiler for type compatibility.
+Because of above reason we can conclude java language is strongly typed programming language.
+Is java a pure Object Programming language or not ?
+Java is not considered as the pure object programming language because , several oops feature is not supported by java
+like operator overloading and multiple inheritance , and more over we are depending on primitive data types which are not
+object types..
+There are 8 primitive data types
+ 1) Numeric data types    and    2) Non Numeric data types(char , boolean)
+ Numeric data tpes are divided into two types
+ 1) Integer data types :- int, byte , short, long
+ 2) Floating type data types :- double , float
+ Note:- Except Boolean , and char remaining data types are considered as signed data types because we can represent both negative and positive numbers
+ Byte data type is used, when we want to transmit the data over the network or to write the data in the file, the byte data type is supported
+ over the network stream and also for the file .

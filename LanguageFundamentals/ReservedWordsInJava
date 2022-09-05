@@ -1,0 +1,26 @@
+There are 53 reserved words in java.
+They are divided into two parts . 1)Keywords 2)Reserved literals.
+Keywords:These words are associated with some function .
+Reserved literals : Not associated with the function .
+True, False, Null are three Reserved Literals .
+There are 48 Keywords in java .
+The Keywords of data types are: byte, short,int ,long, float,double ,boolean,char.
+The Keywords for control flow:if, else,switch,for, case, default,while, do ,for, break , continue, return.
+The Keywords for Modifier: public, private, protected, static, final , abstract, synchronized,native,strictfp,transient,volatile.
+The Keywords for Exception Handling: try, catch , finally, throw ,throws, assert.
+The Keywords for Class:class, interface ,extends, implements, package, import.
+The Keywords for Objects: new , instanceof ,super, this.
+The Keyword for no return: void.
+Unreserved Keyword: goto , const.
+If we used these two keywords this will give us compile time error in java.
+Reserved Literals:
+true, false, null.
+true and false are the values for the boolean data types.
+null : - is the default values for objects references.
+enum:( came in 1.5 version) We can use Enum to define a group of named Constant.
+In JAVA we have only new keyword , and there is no delete keyword in java because the destruction of the useless objects is the responsibility
+of garbage collector.
+The following are new keywords in java:-
+strictfp(1.2 version)
+assert(1.4 version)
+enum(1.5 version)
