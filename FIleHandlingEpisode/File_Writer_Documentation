@@ -1,0 +1,15 @@
+                                                                           FileWriter
+
+    Constructors
+       FileWriter fw = new FileWriter("Cool.txt"); This method is for overriding the concept
+       FileWriter fw = new FileWriter("Cool.txt",true);  This method is for appending the content
+       FileWriter fw = new FileWriter(f,true);
+       FileWriter fw = new FileWriter(f);  :-where f is the file reference point to the file object
+
+    METHODS IN FileWriter.
+
+       write(int ch);  to write one character into the file
+       write(char [] ch) ; to write an array of characters
+       write(String name) : to write String to the file
+       fw.flush();  // to give the guarantee that total data including last character will be written to the file.
+       fw.close();  // to close the writer

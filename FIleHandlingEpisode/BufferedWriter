@@ -1,0 +1,31 @@
+ BufferedWriter = We can use the Buffered Writer to write the content the file
+
+  Constructors
+
+1) BufferedWriter bw = new BufferedWriter(Writer w);
+
+2) BufferedWriter bw = new BufferedWriter(Writer w, int bufferSize);
+
+  Note : BufferedWriter can't communicate with the file directly
+
+  Methods:
+1) write(int ch);
+2) write(char[] ch);
+3) writer(String s);
+4) flush();
+5) close();
+6) newLine();
+
+ FileWriter fw = new FileWriter("Hello.txt");
+      BufferedWriter bw = new BufferedWriter(fw);
+      bw.write("Akash");
+      bw.write('\n');
+      bw.write("is a Good Boy");
+      bw.newLine();
+      bw.write(" How are you");
+      char [] ch = new char[]{'K','U','M','A','R'};
+      bw.write(ch);
+      bw.flush();
+      bw.close();
+
+      Note : Whenever we are closing Buffered writer automatically internal file writer will be closed and we are not require to close explicitly

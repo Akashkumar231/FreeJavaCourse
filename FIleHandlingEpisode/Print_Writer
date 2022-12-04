@@ -1,0 +1,28 @@
+                                                                                  PRINT - WRITER
+PrintWriter - It is the most enhanced writer to write character data to the file .The main advantage of PrintWriter over Buffered writer is we can
+write any data types to the programmer.
+     CONSTRUCTORS
+
+1) PrintWriter pw = new PrintWriter(String fname);
+2) PrintWriter pw = new PrintWriter(File f);
+3) PrintWriter pw = new PrintWriter(writer w);
+
+PrintWriter can directly communicate to the file but also it can communicate via writer also.
+
+    METHODS
+
+1)write(int ch);
+2)write(char [] ch);
+3)write(String s);
+4)flush();
+5)close();
+6)print(char ch);
+7)print(int i);
+8)print(boolean b);
+9)print(double d);
+10)print(String s);
+11)println(char ch);
+12)println(int i);
+13)println(boolean b);
+14)println(double d);
+15)println(String s);

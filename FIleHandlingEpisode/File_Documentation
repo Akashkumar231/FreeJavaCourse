@@ -1,0 +1,61 @@
+                                                                                             FILE I/O
+The Agenda we are going to cover are :
+1) File
+2) FileWriter
+3) FileReader
+4) BufferedWriter
+5) BufferedReader
+6) PrintWriter
+----------------------------------------------------------**********************************-------------------------------------------------------------****************------------
+                                                                    FILE
+   File   f  = new File("Abc.txt");
+   This line wouldn't create any physical file , First it will check if there is any file with name Abc.txt is available or not if
+   it is available the f simply refers the file , if it is not available then we are just creating java file object to represent the name Abc.txt
+
+   We can use java file object to represent directory also.
+
+   Write a code to create a file abc.txt in E colon , xyz folder.
+   Assume that E: is already available present in our system.
+----------------------------------------------------------**********************************-------------------------------------------------------------****************------------
+                                                                   Methods
+ 1)boolean exists();
+  returns true if the specified file or directory available
+ 2)boolean createNewFile();
+  first it will  check whether the specified file is already available or not if it is already available then it will return false else, it will
+  create a new file and returns true.
+ 3)boolean mkdir();
+ 4)boolean isFile();
+   returns true , if it is false.
+ 5)boolean isDirectory
+   returns true, if it is directory.
+ 6)String [] list();
+   returns the name of all files and subdirectories present in the directory
+ 7)long length();
+    returns number of character present in the specified file and directory
+ 8)boolean delete();
+   to delete the file and directory.
+
+Program to list out all the files and subdirectories in directory
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++?????????????????/////////////////////////////
+File f1 = new File("CreatedNewFolder","AkashKumar.txt");
+      f1.createNewFile();
+      System.out.println(f1.exists());
+      File f  = new File("C:\\directoryName");
+      String [] list = f.list();
+      for (String string: list) {
+          System.out.println(string);
+      }
+File f1 = new File("CreatedNewFolder","AkashKumar.txt");
+      f1.createNewFile();
+      System.out.println(f1.exists());
+      File f  = new File("C:\\directoryName");
+      String [] list = f.list();
+      for (String string: list) {
+          File f2= new file( f , "string");
+          if(f2.isFile()){
+          System.out.println(string);
+          count++;
+          }
+          System.out.println(count);
+      }
+

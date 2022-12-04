@@ -1,0 +1,9 @@
+Usage of FileReader and FileWriter is not recommended because :
+While writing data by fileWriter we have to inset /n manually which is varied from system to system it is difficult to the programmer.
+While reading data using fileReader we can read the file by character by character.
+To overcome these problem we should go for buffered writer and buffered Reader.
+
+  NOTE:-
+
+   The main problem with fileWriter is we have to insert line separator manually which is varied from system to system
+   It is the difficulty to the programmer and therefore we use buffered writer and PrintWriter classes.

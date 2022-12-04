@@ -1,0 +1,21 @@
+BufferedReader : We can use Buffered Reader char data from the file
+The main advantage of  Buffered Reader when compared with file Reader is we can read data line by line in addition to char by char
+
+  Constructors:
+
+  BufferedReader br  = new BufferedReader(Reader r);
+
+  BufferedReader br = new BufferedReader(Reader r, int bufferedSize);
+
+  Note : Buffered Reader can't communicate directly to the file and it can communicate via some reader object
+
+  Methods:
+
+  int read();
+  int read(char [] ch);
+  void close();
+  String readLine();
+
+  It attempts to read nextLine From the file and returns it if the next line not available then this methods returns null.
+
+  The most Enhanced Reader that read data from the file is BufferedReader.
