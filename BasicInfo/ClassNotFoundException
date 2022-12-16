@@ -1,0 +1,15 @@
+1)  Introduction____
+
+Both ClassNotFoundException and NoClassDefFoundError occur when the JVM can not find a requested class on the classpath. Although they look familiar, there are some core differences between these two.
+
+2) ClassNotFoundException
+ClassNotFoundException is a checked exception which occurs when an application tries to load a class through its fully-qualified name and can not find its definition on the classpath.
+
+This occurs mainly when trying to load classes using Class.forName(), ClassLoader.loadClass() or ClassLoader.findSystemClass(). Therefore, we need to be extra careful of java.lang.ClassNotFoundException while working with reflection.
+
+3) NoClassDefFoundError
+NoClassDefFoundError is a fatal error. It occurs when JVM can not find the definition of the class while trying to:
+
+Instantiate a class by using the new keyword
+Load a class with a method call
+The error occurs when a compiler could successfully compile the class, but Java runtime could not locate the class file. It usually happens when there is an exception while executing a static block or initializing static fields of the class, so class initialization fails.
